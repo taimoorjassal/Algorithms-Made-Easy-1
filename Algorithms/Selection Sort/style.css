@@ -1,0 +1,126 @@
+:root {
+    --main-raidus: 13px;
+    --main-padding: 8px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: robotto;
+    background-color: #2c3531;
+    font-weight: bold;
+}
+.container {
+    display: grid;
+    grid-template-rows: 0.3fr 4.8fr 2fr 0.4fr;
+    grid-template-columns: 0.5fr 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    "header header"
+    "center about"
+    "work work"
+    "footer footer"
+    ;
+}
+header {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 600;
+    grid-area: header;
+    color: #d1e8e2;
+}
+.center {
+    grid-area: center;
+}
+.about {
+    grid-area: about;
+    text-align: center;
+    color: #000;
+    font-size: 130%;
+}
+.description {
+    margin: 5%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: var(--main-raidus);
+    background-color: #116466;
+    color:#d1e8e2;
+    font-family: robotto;
+    font-size: 110%;
+}
+.about > img {
+    padding-top: 2%;
+    width: 400px;
+}
+.work {
+    grid-area: work;
+    text-align: center;
+    color: #d1e8e2;
+    border-radius: var(--main-raidus);
+    padding-top: var(--main-padding);
+    background-color: #116466;
+    margin: 20px;
+}
+.work p{
+    background-color: #116466;
+    color: #d1e8e2;
+    font-family: robotto;
+    border-radius: var(--main-raidus);
+    font-size: 130%;
+    padding:20px;
+
+}
+.title {
+    color: #d1e8e2;
+    padding: 5px;
+}
+f
+#sidebar {
+    float: left;
+    grid-area: sidebar;
+    border-radius: var(--main-raidus);
+    padding-top: var(--main-padding);
+}
+#about {
+    margin-top: 20px;
+    font-size: 150%;
+    text-align: center;   
+    border-radius: var(--main-raidus);
+    padding-top: var(--main-padding);
+}
+#description {
+    font-size: 150%;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 30px;
+}
+#canvas{
+    margin: auto;
+}
+.title p{
+    color: #48edca;
+}
+footer{
+    grid-area: footer;
+    padding-top: var(--main-padding);
+    color: #d1e8e2; 
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 110%;
+    font-weight:lighter;
+}
+@media only screen and (max-width: 1000px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "center"
+        "work"
+        "about"
+        "footer"
+        ;
+    }
+}
