@@ -14,4 +14,4 @@ HTML
 CSS
 JavaScript (P5 to generate animations of algorithm working)
 
-I worked with my partenr Muhammad Jamal on this project. 
+
