@@ -6,8 +6,8 @@ This app helps in understanding of algorithms by creating animations of algorith
 I worked with my partenr for this peoject. 
 
 We implemented 2 algorithms initially
-# A* Path Finding Algorithm
-# Selection Sort Algorithm
+A* Path Finding Algorithm
+Selection Sort Algorithm
 
 We used following languages
 HTML
